@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	urls := []string{"olang.org/", "https://go.dev/"}
+	urls := []string{"https://golang.org", "https://go.dev/"}
 	gs := gosearch{}
 	gs.scanner = spider.New()
 	chRes, _ := gs.scanner.BatchScan(urls, 3, 3)
